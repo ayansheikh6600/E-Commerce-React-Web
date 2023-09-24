@@ -10,6 +10,8 @@ import { Route, Routes } from 'react-router-dom'
 import Contact from './Pages/Contact/Contact'
 import Error from './Pages/ErrorPage/Error'
 import Products from './Pages/Product/Products'
+import SkeletonCard from './components/SkeletonCard'
+import BottomNavbar from './components/BottomNavbar'
 
 function App() {
 
@@ -21,13 +23,14 @@ function App() {
     </div> */}
     <Routes>
       <Route index element={<Body/>}/>
-      <Route path='/about' element={<Body/>}/>
+      <Route path='/about' element={""}/>
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/products' element={<Products/>}/>
       <Route path='*' element={<Error/>}/>
     </Routes>
     
     <Footer/>
+    <BottomNavbar/>
 
 
 

@@ -1,12 +1,12 @@
 import React from "react";
-import Carousal from "../Carousal";
 import vitelogo from "../../assets/react.svg";
 import HomeCard from "../HomeCard";
+import ControlledCarousal from "../ControlledCarousal";
 
 const Body = () => {
   return (
     <>
-      <Carousal />
+     <ControlledCarousal/>
       <div className="container mt-5">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 ">
           <HomeCard
