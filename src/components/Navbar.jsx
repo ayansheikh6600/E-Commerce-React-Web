@@ -9,7 +9,7 @@ const Navbar = ()=>{
             <div className="w-[300px] h-[50px]">
             <Link to='/'><img src={Logo} className="h-[50px]" alt="" /></Link>
             </div>
-            <ul className="flex justify-center mx-auto gap-10">
+            <ul className=" justify-center mx-auto gap-10 hidden sm:flex">
                 <li>
                     <NavLink to="/" className={({isActive})=>{
                         return isActive? "w-full border-b-2 border-[#fc8937]" : ""
